@@ -3,8 +3,7 @@
   <entry>
     <title>linux入门命令学习</title>
     <url>/2020/04/08/linux%E5%85%A5%E9%97%A8%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>[toc]</p>
-<h1 id="linux学习"><a href="#linux学习" class="headerlink" title="linux学习"></a>linux学习</h1><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="其他的命令"><a href="#其他的命令" class="headerlink" title="其他的命令"></a>其他的命令</h3><ul>
+    <content><![CDATA[<h1 id="linux学习"><a href="#linux学习" class="headerlink" title="linux学习"></a>linux学习</h1><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="其他的命令"><a href="#其他的命令" class="headerlink" title="其他的命令"></a>其他的命令</h3><ul>
 <li><strong>reboot</strong>–重启系统</li>
 <li><strong>sudo passwd root</strong>–进入root权限</li>
 <li><strong>exit</strong>–退出root权限</li>
@@ -45,12 +44,11 @@
 <td align="center">x</td>
 <td align="center">可运行</td>
 </tr>
-<tr>
-<td align="center">==tips==:可以看到linux的文件信息</td>
-<td align="center"></td>
-</tr>
 </tbody></table>
 </li>
+</ul>
+<p>==tips==:可以看到linux的文件信息</p>
+<ul>
 <li><strong>十个字母</strong>–上述表格内容，-为没有该操作</li>
 <li><strong>数字</strong>–文件夹内文件数</li>
 <li><strong>权限</strong></li>
@@ -147,123 +145,44 @@
 <td align="center">grep grep [A-Za-z]ill filename | wc</td>
 <td align="center">数行数-单词数-字节数</td>
 </tr>
-<tr>
-<td align="center">##### wc–统计文件</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>wc</code>–word count数单词，输出为<code>行</code>+<code>单词数</code>+<code>字节数</code></td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>wc</code>+<code>-w</code>–单词数</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>wc</code>+<code>-l</code>–行数</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>wc</code>+<code>-c</code>–字节数</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">##### chmod-文件权限修改</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>chmod</code>+<code>u(o-g)</code>+(-)<code>r</code>+<strong>filename</strong>–修改权限，前者为权限，后者为删除操作</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>chmod</code>+<code>444</code>+<strong>filename</strong>–对所有权限只能读不能写，操作为100-100-100即444</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">##### &gt;–重定义符号</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>ls</code>+<code>&gt;</code>+<strong>filename</strong>–将当前目录下的内容输出到文件内</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>cat</code>+<strong>filename</strong>+<strong>filename</strong>+<strong>…</strong>+<code>&gt;</code><strong>filename</strong>–将前面所有内容复制到后面的文件</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>cat</code>+<strong>filename</strong>+<code>&gt;&gt;</code>+<strong>filename</strong>–添加文件到这个文件的末尾</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">### 常用的全局变量</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>USER</code>–当前用户的用户名<code>echo</code>可以打印</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>HOME</code>–当前用户的主目录</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>PATH</code>–环境变量</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>PATH</code>=<strong>$</strong>PATH:/…/…/…–将/…/…/…加入到当前路径下,就可以在任意地方编译,路径用<code>:</code>隔开</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">### 压缩文件</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>zip</code>+<strong>filename</strong>.zip</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>zip</code>+<strong>filename</strong>.zip +<code>-r</code>+<code>workspace/\*</code>–压缩workspace/*里面全部的文件</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>tar</code>+<code>-zcvf</code>+<strong>filename</strong>.tar.gz+ <strong>filename1/</strong>–压缩文件</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">1. -z:以gzip格式压缩</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">2. -c:重命名</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">3. -v:压缩情况显示</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">4. -f:重命名</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>tar</code>+<code>-zxcf</code>+<strong>filename</strong>.tar.gz–解压文件</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">### 在网络上下载文件</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>wegt</code>+<strong>网址</strong>–在网址上下载</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">+ <code>wegt</code>+<strong>网址</strong>+<code>-O</code>+<strong>重命名</strong>–下载文件重命名</td>
-<td align="center"></td>
-</tr>
 </tbody></table>
+<h5 id="wc–统计文件"><a href="#wc–统计文件" class="headerlink" title="wc–统计文件"></a>wc–统计文件</h5><ul>
+<li><code>wc</code>–word count数单词，输出为<code>行</code>+<code>单词数</code>+<code>字节数</code></li>
+<li><code>wc</code>+<code>-w</code>–单词数</li>
+<li><code>wc</code>+<code>-l</code>–行数</li>
+<li><code>wc</code>+<code>-c</code>–字节数</li>
+</ul>
+<h5 id="chmod-文件权限修改"><a href="#chmod-文件权限修改" class="headerlink" title="chmod-文件权限修改"></a>chmod-文件权限修改</h5><ul>
+<li><code>chmod</code>+<code>u(o-g)</code>+(-)<code>r</code>+<strong>filename</strong>–修改权限，前者为权限，后者为删除操作</li>
+<li><code>chmod</code>+<code>444</code>+<strong>filename</strong>–对所有权限只能读不能写，操作为100-100-100即444</li>
+</ul>
+<h5 id="gt-–重定义符号"><a href="#gt-–重定义符号" class="headerlink" title="&gt;–重定义符号"></a>&gt;–重定义符号</h5><ul>
+<li><code>ls</code>+<code>&gt;</code>+<strong>filename</strong>–将当前目录下的内容输出到文件内</li>
+<li><code>cat</code>+<strong>filename</strong>+<strong>filename</strong>+<strong>…</strong>+<code>&gt;</code><strong>filename</strong>–将前面所有内容复制到后面的文件</li>
+<li><code>cat</code>+<strong>filename</strong>+<code>&gt;&gt;</code>+<strong>filename</strong>–添加文件到这个文件的末尾</li>
+</ul>
+<h3 id="常用的全局变量"><a href="#常用的全局变量" class="headerlink" title="常用的全局变量"></a>常用的全局变量</h3><ul>
+<li><code>USER</code>–当前用户的用户名<code>echo</code>可以打印</li>
+<li><code>HOME</code>–当前用户的主目录</li>
+<li><code>PATH</code>–环境变量</li>
+<li><code>PATH</code>=<strong>$</strong>PATH:/…/…/…–将/…/…/…加入到当前路径下,就可以在任意地方编译,路径用<code>:</code>隔开</li>
+</ul>
+<h3 id="压缩文件"><a href="#压缩文件" class="headerlink" title="压缩文件"></a>压缩文件</h3><ul>
+<li><code>zip</code>+<strong>filename</strong>.zip</li>
+<li><code>zip</code>+<strong>filename</strong>.zip +<code>-r</code>+<code>workspace/\*</code>–压缩workspace/*里面全部的文件</li>
+<li><code>tar</code>+<code>-zcvf</code>+<strong>filename</strong>.tar.gz+ <strong>filename1/</strong>–压缩文件<ol>
+<li>-z:以gzip格式压缩</li>
+<li>-c:重命名</li>
+<li>-v:压缩情况显示</li>
+<li>-f:重命名</li>
+</ol>
+</li>
+<li><code>tar</code>+<code>-zxcf</code>+<strong>filename</strong>.tar.gz–解压文件</li>
+</ul>
+<h3 id="在网络上下载文件"><a href="#在网络上下载文件" class="headerlink" title="在网络上下载文件"></a>在网络上下载文件</h3><ul>
+<li><code>wegt</code>+<strong>网址</strong>–在网址上下载</li>
+<li><code>wegt</code>+<strong>网址</strong>+<code>-O</code>+<strong>重命名</strong>–下载文件重命名</li>
+</ul>
 ]]></content>
   </entry>
 </search>
