@@ -1,31 +1,269 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>:2020:04:05:text1.md</title>
-    <url>/2020/04/06/2020-04-05-text1-md/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>test_my_site</title>
-    <url>/2020/04/06/test-my-site/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/04/06/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <title>linux入门命令学习</title>
+    <url>/2020/04/08/linux%E5%85%A5%E9%97%A8%E5%91%BD%E4%BB%A4%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>[toc]</p>
+<h1 id="linux学习"><a href="#linux学习" class="headerlink" title="linux学习"></a>linux学习</h1><h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><h3 id="其他的命令"><a href="#其他的命令" class="headerlink" title="其他的命令"></a>其他的命令</h3><ul>
+<li><strong>reboot</strong>–重启系统</li>
+<li><strong>sudo passwd root</strong>–进入root权限</li>
+<li><strong>exit</strong>–退出root权限</li>
+<li><strong>date</strong>–系统日期</li>
+<li><strong>pwd</strong>–查看当前文件夹的位置</li>
+<li><strong>top</strong>–类似于任务管理器<br>==tips:==<strong>linux</strong>一般用<code>/</code>操作文件，<strong>windows</strong>一般用<code>\</code>操作文件，<br>如cd /d e:\换到e盘<h4 id="cal"><a href="#cal" class="headerlink" title="cal"></a>cal</h4></li>
+<li><code>cal</code>–当月日历</li>
+<li><code>cal</code>+<strong>年份</strong> –全部日历</li>
+<li><code>cal</code>+<strong>月份</strong>+<strong>年份</strong>–某年某月日历<h4 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h4></li>
+<li><code>cd</code>+<strong>filename</strong> –进入当前目录下某个文件</li>
+<li><code>cd</code>+<code>..</code>–退到上一层文件</li>
+<li><code>cd</code>+<code>/</code>–退到最上层文件<h4 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h4></li>
+<li><code>ls</code>–查看当前目录的文件</li>
+<li><code>ls</code>+<code>-</code>+<code>l</code>–查看当前文件夹信息<table>
+<thead>
+<tr>
+<th align="center">字母</th>
+<th align="center">权限/含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">d/-</td>
+<td align="center">这个是文件夹/文件</td>
+</tr>
+<tr>
+<td align="center">u-g-o</td>
+<td align="center">权限:作者-小组-其他</td>
+</tr>
+<tr>
+<td align="center">r</td>
+<td align="center">可读</td>
+</tr>
+<tr>
+<td align="center">w</td>
+<td align="center">可写</td>
+</tr>
+<tr>
+<td align="center">x</td>
+<td align="center">可运行</td>
+</tr>
+<tr>
+<td align="center">==tips==:可以看到linux的文件信息</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+</li>
+<li><strong>十个字母</strong>–上述表格内容，-为没有该操作</li>
+<li><strong>数字</strong>–文件夹内文件数</li>
+<li><strong>权限</strong></li>
+<li><strong>大小</strong></li>
+<li><strong>时间</strong></li>
+<li><strong>名字</strong><h3 id="下载安装包命令"><a href="#下载安装包命令" class="headerlink" title="下载安装包命令"></a>下载安装包命令</h3></li>
+<li><strong>apt install &lt;选定的软件包&gt;</strong>–下载软件包</li>
+<li><strong>sudo apt-get install vim-gtk</strong>–ubunt下安装vim，<strong>这里需要桥接网络</strong><h3 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h3></li>
+<li><code>vi</code>+<code>table</code>–查看vi</li>
+<li><strong>sudo vim /etc/vim/vimrc</strong>–进入vim编辑</li>
+<li><code>vim</code>+<strong>filename</strong>–编辑某文件，加<strong>多个filename</strong>进入多个文件<ol>
+<li><code>i</code>–进入编辑模式 </li>
+<li><code>O</code>–进入命令模式</li>
+<li><code>!</code>–强制 </li>
+<li><code>w</code>–保存 </li>
+<li><code>:</code>输入命令关键字</li>
+</ol>
+</li>
+<li><code>esc</code>+<code>:</code>+<code>wq</code>–保存退出</li>
+<li><code>esc</code>+<code>:</code>+<code>:q</code>–不保存退出</li>
+<li><code>esc</code>+<code>:</code>+<code>e!</code>–放弃所有修改，从上次保存为文件再编辑<h3 id="清空屏幕"><a href="#清空屏幕" class="headerlink" title="清空屏幕"></a>清空屏幕</h3></li>
+<li><code>clear</code></li>
+<li><code>ctrl</code>+<code>l</code></li>
+<li><strong>reset</strong>–相当于清空，前两者相当于翻页<h3 id="文件操作–未包括cd与ls"><a href="#文件操作–未包括cd与ls" class="headerlink" title="文件操作–未包括cd与ls"></a>文件操作–未包括<code>cd</code>与<code>ls</code></h3></li>
+<li><strong>mkdir</strong>+<strong>dirname</strong>–当前目录下创建文件夹</li>
+<li><strong>touch</strong>+<strong>filename</strong>–当前目录下创建文件</li>
+<li><strong>rmdir</strong>+<strong>dirname</strong>–删除当前目录下文件夹</li>
+<li><strong>rm</strong>+<strong>filename</strong>–删除当前目录下文件</li>
+<li><strong>less</strong>+<strong>filename</strong>–可以查看文件，上下移动查看，用<code>Q</code>退出文件</li>
+<li><strong>cp</strong>+<strong>filename</strong>+<strong>rename filename</strong>–复制文件</li>
+<li><strong>cat</strong>+<strong>filename</strong>–查看文件的内容</li>
+<li><strong>diff</strong>+<strong>filename</strong>+<strong>filename</strong>–查看文件的差异</li>
+<li><strong>head</strong>+<strong>filename</strong>+<code>-n</code>+<code>number</code>–输出前number行</li>
+<li><strong>tail</strong>+<strong>filename</strong>+<code>-n</code>+<code>number</code>–输出后number行<h5 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h5><blockquote>
+<p>权限~]# mv [选项[^选项说明]] 源文件 目标文件</p>
+</blockquote>
+</li>
+</ul>
+<p>[^选项说明]：<br>    * -f:强制覆盖,如果目标文件已经存在,则不询问,直接强制覆盖;<br>    * -i:交互移动,如果目标文件已经存在,则询问用户是否覆盖(默认选择),<br>         如果没有则直接移动<br>    * -n:如果目标文件已经存在,则不会覆盖移动,而且不询问用户;<br>    * -v:显示文件或目录的移动过程;<br>    * -u:若目标文件已经存在,但两者相比,源文件更新,则会对目标文件进行升级;</p>
+<h6 id="移动文件或目录"><a href="#移动文件或目录" class="headerlink" title="移动文件或目录"></a>移动文件或目录</h6><blockquote>
+<ol>
+<li><p>[root@localhost ~]# mv cangls /tmp</p>
+</li>
+<li><p>#移动之后，源文件会被删除，类似剪切</p>
+</li>
+<li><p>[root@localhost ~]# mkdir movie</p>
+</li>
+<li><p>[root@localhost ~]# mv movie/ /tmp</p>
+</li>
+<li><p>#也可以移动目录。和 rm、cp 不同的是，mv 移动目录不需要加入 “-r” 选项</p>
+</li>
+</ol>
+</blockquote>
+<h6 id="文件改名"><a href="#文件改名" class="headerlink" title="文件改名"></a>文件改名</h6><blockquote>
+<ol>
+<li><p>[root@localhost ~]# mv bols lmls</p>
+</li>
+<li><p>#把 bols 改名为 lmls</p>
+</li>
+</ol>
+</blockquote>
+<h5 id="grep–文件内查找"><a href="#grep–文件内查找" class="headerlink" title="grep–文件内查找"></a>grep–文件内查找</h5><table>
+<thead>
+<tr>
+<th align="center">输入</th>
+<th align="center">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">grep 关键词 filename</td>
+<td align="center">在文件内查看关键词有没有  有颜色就可以出来</td>
+</tr>
+<tr>
+<td align="center">grep l* filename</td>
+<td align="center">文件内有l的会被highlight ll*会只出现只有l的</td>
+</tr>
+<tr>
+<td align="center">grep ^H filename</td>
+<td align="center">搜索出文件内以H为开头的关键字</td>
+</tr>
+<tr>
+<td align="center">grep H.ll filename</td>
+<td align="center">.可以是任意字母的查找</td>
+</tr>
+<tr>
+<td align="center">grep [Hh]ill filename</td>
+<td align="center">[]内任意一个大小写</td>
+</tr>
+<tr>
+<td align="center">grep [A-Za-z]ill filename</td>
+<td align="center">查找文件任意ill的关键字</td>
+</tr>
+<tr>
+<td align="center">grep grep [A-Za-z]ill filename | wc</td>
+<td align="center">数行数-单词数-字节数</td>
+</tr>
+<tr>
+<td align="center">##### wc–统计文件</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>wc</code>–word count数单词，输出为<code>行</code>+<code>单词数</code>+<code>字节数</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>wc</code>+<code>-w</code>–单词数</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>wc</code>+<code>-l</code>–行数</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>wc</code>+<code>-c</code>–字节数</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">##### chmod-文件权限修改</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>chmod</code>+<code>u(o-g)</code>+(-)<code>r</code>+<strong>filename</strong>–修改权限，前者为权限，后者为删除操作</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>chmod</code>+<code>444</code>+<strong>filename</strong>–对所有权限只能读不能写，操作为100-100-100即444</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">##### &gt;–重定义符号</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>ls</code>+<code>&gt;</code>+<strong>filename</strong>–将当前目录下的内容输出到文件内</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>cat</code>+<strong>filename</strong>+<strong>filename</strong>+<strong>…</strong>+<code>&gt;</code><strong>filename</strong>–将前面所有内容复制到后面的文件</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>cat</code>+<strong>filename</strong>+<code>&gt;&gt;</code>+<strong>filename</strong>–添加文件到这个文件的末尾</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">### 常用的全局变量</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>USER</code>–当前用户的用户名<code>echo</code>可以打印</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>HOME</code>–当前用户的主目录</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>PATH</code>–环境变量</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>PATH</code>=<strong>$</strong>PATH:/…/…/…–将/…/…/…加入到当前路径下,就可以在任意地方编译,路径用<code>:</code>隔开</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">### 压缩文件</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>zip</code>+<strong>filename</strong>.zip</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>zip</code>+<strong>filename</strong>.zip +<code>-r</code>+<code>workspace/\*</code>–压缩workspace/*里面全部的文件</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>tar</code>+<code>-zcvf</code>+<strong>filename</strong>.tar.gz+ <strong>filename1/</strong>–压缩文件</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">1. -z:以gzip格式压缩</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">2. -c:重命名</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">3. -v:压缩情况显示</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">4. -f:重命名</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>tar</code>+<code>-zxcf</code>+<strong>filename</strong>.tar.gz–解压文件</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">### 在网络上下载文件</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>wegt</code>+<strong>网址</strong>–在网址上下载</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">+ <code>wegt</code>+<strong>网址</strong>+<code>-O</code>+<strong>重命名</strong>–下载文件重命名</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
 ]]></content>
   </entry>
 </search>
